@@ -1,0 +1,21 @@
+:root{
+    --cor-primaria: #4f46e5;
+    --cor-primaria-hover: #4338ca;
+    --cor-secundaria: #22c55e;
+    --cor-fundo: #f8fafc;
+    --cor-textp: #1e293b;
+    --cor-card: #ffffff;
+    --cor-tag: #e0e7ff;
+
+    --espaco-pequeno: 0.5rem;
+    --espaco-medio: 1rem;
+    --espaco-grande: 1.5rem;
+    --espaco-extra: 2rem;
+}
+
+
+
+button{
+    background-color: var(--cor-primaria);
+    color: white;
+}
