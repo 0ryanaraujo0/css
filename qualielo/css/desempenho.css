@@ -1,0 +1,440 @@
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+.team-section {
+    padding: 35px 60px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #020817,
+            #031028
+        );
+
+    min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.team-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 22px;
+
+    margin-bottom: 38px;
+}
+
+/* ÍCONE */
+.header-icon {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        rgba(93, 52, 255, 0.08);
+
+    border:
+        1px solid rgba(132, 92, 255, 0.18);
+}
+
+.header-icon i {
+    font-size: 24px;
+
+    color: #8f7dff;
+}
+
+/* TÍTULO */
+.team-header h1 {
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    margin-bottom: 6px;
+}
+
+/* TEXTO */
+.team-header p {
+    color: #9fb2d3;
+
+    font-size: 15px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.team-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 0.95fr;
+
+    gap: 28px;
+}
+
+/* ESQUERDA */
+.team-left {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+/* =========================
+   CARDS FUNCIONÁRIOS
+========================= */
+
+.employee-card {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(7, 18, 38, 0.96),
+            rgba(3, 10, 24, 0.98)
+        );
+
+    border-radius: 22px;
+
+    padding: 28px 32px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border:
+        1px solid rgba(255,255,255,0.05);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.30);
+}
+
+/* BORDA */
+.danger-card {
+    border-left:
+        5px solid #ff3366;
+}
+
+/* INFO */
+.employee-info h2 {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.employee-info span {
+    color: #00bfff;
+
+    font-size: 14px;
+}
+
+/* STATS */
+.employee-stats {
+    display: flex;
+
+    align-items: center;
+
+    gap: 26px;
+}
+
+/* NÚMERO */
+.error-number h1 {
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    margin-bottom: 2px;
+
+    text-align: center;
+}
+
+.error-number small {
+    color: #8ea3c5;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+/* SEVERIDADE */
+.severity {
+    display: flex;
+
+    gap: 14px;
+}
+
+.severity-item {
+    color: white;
+
+    font-size: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+/* BOLINHAS */
+.dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff3366;
+}
+
+.yellow {
+    background: #ffd000;
+}
+
+.green {
+    background: #00e59b;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.train-btn {
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 40px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: transparent;
+
+    transition: 0.3s;
+}
+
+/* BOTÃO ROSA */
+.danger-btn {
+    color: #ff3366;
+
+    border:
+        1px solid rgba(255,51,102,0.35);
+}
+
+/* BOTÃO VERDE */
+.success-btn {
+    color: #00e59b;
+
+    border:
+        1px solid rgba(0,229,155,0.30);
+}
+
+/* HOVER */
+.train-btn:hover {
+    transform: translateY(-2px);
+
+    background:
+        rgba(255,255,255,0.03);
+}
+
+/* =========================
+   DIREITA
+========================= */
+
+.team-right {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+/* CARD LATERAL */
+.side-card {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(7, 18, 38, 0.96),
+            rgba(3, 10, 24, 0.98)
+        );
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    border:
+        1px solid rgba(255,255,255,0.05);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.30);
+}
+
+/* TÍTULO */
+.side-card h3 {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 28px;
+}
+
+/* =========================
+   GRÁFICO
+========================= */
+
+.chart-area {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    height: 170px;
+}
+
+/* COLUNA */
+.chart-column {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+/* BARRAS */
+.chart-bar {
+    width: 38px;
+
+    border-radius: 10px 10px 0 0;
+
+    background: #8f7dff;
+}
+
+.big {
+    height: 125px;
+}
+
+.small {
+    height: 38px;
+}
+
+.tiny {
+    height: 10px;
+}
+
+/* NOMES */
+.chart-column span {
+    color: #9fb2d3;
+
+    font-size: 13px;
+}
+
+/* =========================
+   RECOMENDAÇÃO
+========================= */
+
+.recommendation {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+}
+
+.recommendation i {
+    color: #00bfff;
+
+    font-size: 22px;
+}
+
+.recommendation p {
+    color: #9fb2d3;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.recommendation strong {
+    color: white;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1200px) {
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .employee-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 22px;
+    }
+
+    .employee-stats {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .team-section {
+        padding: 25px;
+    }
+
+    .team-header h1 {
+        font-size: 28px;
+    }
+
+    .team-header p {
+        font-size: 14px;
+    }
+
+    .train-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,1 @@
+# QualiElo.projeto

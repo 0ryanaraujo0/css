@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/dash.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-lightning-fill text-warning" style="font-size: 1.5rem;"></i>
+      </a>
+
+      <div class="lh-sm">
+        <span class="d-block fw-bold text-black fs-6">User</span>
+        <span class="d-block text-info fw-semibold" style="font-size: 0.75rem; letter-spacing: 0.5px;">LÍDER</span>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item" id="menuDashboard">
+            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-activity"></i>Dashboard</a>
+          </li>
+                    <li class="nav-item"  id="menuDesempenho">
+                        <a class="nav-link" href="desenpenho-lider.html"><i class="bi bi-people"></i>Desempenho da Equipe</a>
+          </li>
+
+          <li class="nav-item ms-auto">
+            <a class="nav-link" href="../index.html">
+              <i class="bi bi-box-arrow-in-right"></i>Sair
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+<div class="dashboard-container">
+
+    <!-- TÍTULO -->
+    <div class="dashboard-header">
+        <h1>Painel de Inspeção</h1>
+        <p>Visão geral em tempo real dos erros de montagem detectados na linha de produção.</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="cards-grid">
+
+        <!-- CARD 1 -->
+        <div class="info-card">
+            <div class="card-top">
+                <span>Total de Falhas (Mês)</span>
+
+                <div class="card-icon blue">
+                    <i class="bi bi-exclamation-triangle"></i>
+                </div>
+            </div>
+
+            <h2>6</h2>
+
+            <small>+12% em relação a fev</small>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="info-card">
+            <div class="card-top">
+                <span>Falhas Críticas</span>
+
+                <div class="card-icon red">
+                    <i class="bi bi-activity"></i>
+                </div>
+            </div>
+
+            <h2>2</h2>
+
+            <small>-2% após treinamento</small>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="info-card">
+            <div class="card-top">
+                <span>Erro Mais Frequente</span>
+
+                <div class="card-icon yellow">
+                    <i class="bi bi-bullseye"></i>
+                </div>
+            </div>
+
+            <h3>Cabo invertido</h3>
+
+            <small>2 ocorrências</small>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="info-card">
+            <div class="card-top">
+                <span>Colaboradores Auditados</span>
+
+                <div class="card-icon green">
+                    <i class="bi bi-people"></i>
+                </div>
+            </div>
+
+            <h2>5</h2>
+
+            <small>100% da equipe avaliada</small>
+        </div>
+
+    </div>
+
+    <!-- ÁREA DOS GRÁFICOS -->
+    <div class="charts-grid">
+
+        <!-- GRÁFICO BARRAS -->
+        <div class="chart-card big-chart">
+
+            <div class="chart-title">
+                <i class="bi bi-graph-up-arrow"></i>
+                <h4>Top 5 Tipos de Erros</h4>
+            </div>
+
+            <div class="bars-area">
+
+                <div class="bar-item">
+                    <div class="bar" style="height: 220px;"></div>
+                    <span>Cabo invertido</span>
+                </div>
+
+                <div class="bar-item">
+                    <div class="bar" style="height: 220px;"></div>
+                    <span>Solda fria</span>
+                </div>
+
+                <div class="bar-item">
+                    <div class="bar" style="height: 120px;"></div>
+                    <span>Parafuso solto</span>
+                </div>
+
+                <div class="bar-item">
+                    <div class="bar" style="height: 120px;"></div>
+                    <span>Componente trocado</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- GRÁFICO CÍRCULO -->
+        <div class="chart-card donut-chart">
+
+            <div class="chart-title">
+                <i class="bi bi-activity"></i>
+                <h4>Distribuição por Gravidade</h4>
+            </div>
+
+            <div class="donut-wrapper">
+
+                <div class="donut-chart-graphic"></div>
+
+                <div class="legend">
+
+                    <div class="legend-item">
+                        <span class="dot green"></span>
+                        Simples
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="dot yellow"></span>
+                        Médio
+                    </div>
+
+                    <div class="legend-item">
+                        <span class="dot red"></span>
+                        Grave
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="card table-card">
+
+    <!-- TÍTULO -->
+    <div class="card-title">
+        Últimos Registros
+    </div>
+
+    <!-- TABELA -->
+    <table class="data-table">
+
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Colaborador</th>
+                <th>Tipo de Erro</th>
+                <th>Gravidade</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+
+        <!-- CORPO -->
+        <tbody id="tabelaRegistros">
+
+            <!-- LINHA 1 -->
+            <tr>
+                <td class="date">09 mar 2026</td>
+
+                <td>Carlos Silva</td>
+
+                <td>Cabo invertido</td>
+
+                <td>
+                    <span class="badge danger">
+                        Grave
+                    </span>
+                </td>
+
+                <td class="desc">
+                    Inversão de polaridade no motor principal.
+                </td>
+            </tr>
+
+            <!-- LINHA 2 -->
+            <tr>
+                <td class="date">11 mar 2026</td>
+
+                <td>Roberto Santos</td>
+
+                <td>Solda fria</td>
+
+                <td>
+                    <span class="badge warning">
+                        Médio
+                    </span>
+                </td>
+
+                <td class="desc">
+                    Conector p2 mal fixado na placa.
+                </td>
+            </tr>
+
+            <!-- LINHA 3 -->
+            <tr>
+                <td class="date">13 mar 2026</td>
+
+                <td>Carlos Silva</td>
+
+                <td>Parafuso solto</td>
+
+                <td>
+                    <span class="badge success">
+                        Simples
+                    </span>
+                </td>
+
+                <td class="desc">
+                    Chassi com folga na lateral direita.
+                </td>
+            </tr>
+
+            <!-- LINHA 4 -->
+            <tr>
+                <td class="date">13 mar 2026</td>
+
+                <td>Ana Oliveira</td>
+
+                <td>Componente trocado</td>
+
+                <td>
+                    <span class="badge warning">
+                        Médio
+                    </span>
+                </td>
+
+                <td class="desc">
+                    Resistor de 10k onde deveria ser 1k.
+                </td>
+            </tr>
+
+            <!-- LINHA 5 -->
+            <tr>
+                <td class="date">14 mar 2026</td>
+
+                <td>Fernando Souza</td>
+
+                <td>Cabo invertido</td>
+
+                <td>
+                    <span class="badge danger">
+                        Grave
+                    </span>
+                </td>
+
+                <td class="desc">
+                    Fase e neutro trocados no borne de entrada.
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+    <script src="js/tabela.js"></script>
+    <script src="js/dash.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+.bg-menu{
+    background-color: #073b59;
+}
+.navbar-nav li a{
+    color: #FFFFFF !important;
+    border-bottom: 4px solid #073b59;
+}
+.navbar-nav li a:hover{
+    border-bottom: 4px solid #fe5000;
+}
+.dropdown-menu{
+    background-color: #073b59 !important;
+}
+.dropdown-menu li a:hover{
+    color: #FFF !important;
+    background-color: #fe5000;
+}
+.navbar-nav li{
+    padding: 0 20px !important;
+}
+/********************button laranja********************/
+.btn-unipam{
+    color: #FFF !important;
+    background-color: #fe5000 !important;
+}
+.btn-unipam:hover{
+    background-color: #073b59 !important;
+}
+/***************espacamento***************************/
+.espacamento{
+    margin: 60px 0 !important;
+}
+/************************button laranja*********/
+.btn-unipam{
+    color: #ffffff !important;
+    background-color: #fe5000 !important;
+}
+.btn-unipam:hover{
+    background-color: #073b59 !important;
+}
+/****************/
+.espacamento{
+    margin: 60px !important; 
+}
+.bg-card{
+    background-color: #073b59!important;
+    color: #fff!important;
+}
+.bg-card i{
+    font-size: 5rem !important;
+}
+.btn-card{
+    color: #fff !important;
+    background-color: #073b59 !important;
+    border: 1px solid #fff !important;
+}
+.btn-card:hover{
+    color: #073b59 !important;
+    background-color: #fff !important;
+    border: 1px solid #073b59 !important;
+}
+/****************/
+.background-section{
+    background-color: #ecf0f5;
+    padding: 60px;
+    color: #073b59;
+    margin-bottom: 50px;
+}
+/****************/
+
+.background-footer{
+    background-color: #073b59;
+    color: #ecf0f5;
+    padding: 60px;
+}
+.background-footer i{
+   font-size: 30px
+}

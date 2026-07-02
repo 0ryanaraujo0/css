@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-sizes">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="img/cartoon-network-cn-logo-hd-png-701751694708568zxoq18qbzl.png" alt="Bootstrap"
+                        width="90" height="80" style="padding-left: 10px;" ;>
+                </a>
+            </div>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classicos.html">Clássicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="novos.html">Novos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programacao.html">Programação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item nav-login">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="espacamento">
+        <div id="carouselExampleRide" class="carousel slide size-photos mx-auto" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/o_inicio_do_mundo_de_greg.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hora de aventura.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/o incrivel mundo de gumball.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="espacamento">
+        <h2 class="text-center espacamento font-text">Em alta</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="img/Steven universo 2.jpg" class="card-img-top" alt="Sistemas de Informação">
+                        <div class="card-body">
+                            <p class="card-text">A série se concentra no rescaldo dos eventos do Universo Steven, onde humanos e gemas coexistem em harmonia após o fim da guerra entre as Gemas de Cristal e Homeworld.</p>
+                            <div class="text-center"><a href="#" class="btn btn-card">Assista agora</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="img/meninas superpoderosas.jpg" class="card-img-top" alt="Sistemas de Informação">
+                        <div class="card-body">
+                            <p class="card-text">Florzinha, Lindinha e Docinho usam seus superpoderes e fofura para salvar a cidade de Townsville de vilões malignos e de todas as coisas nojentas.
+
+</p>
+                            <div class="text-center"><a href="#" class="btn btn-card">Assista agora</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="img/ben 10.jpg" class="card-img-top" alt="Sistemas de Informação">
+                        <div class="card-body">
+                            <p class="card-text">A história de Ben Tennyson, um garoto típico que se torna muito atípico depois de descobrir o Omnitrix, um misterioso dispositivo alienígena com o poder de transformar o usuário em dez espécies alienígenas diferentes.</p>
+                            <div class="text-center"><a href="#" class="btn btn-card">Assita agora</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <img src="img/apenas um show.jpg" class="card-img-top" alt="Sistemas de Informação">
+                        <div class="card-body">
+                            <p class="card-text">As aventuras diárias e surreais de um duende de gaio-azul e guaxinim que tentam lidar com seus trabalhos mundanos como jardineiros no parque local.</p>
+                            <div class="text-center"><a href="#" class="btn btn-card">Assista agora</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <footer>
+        <p>&copy; 2026 Cartoon Network. Todos os direitos reservados.</p>
+        
+    </footer>
+</body>
+
+</html>

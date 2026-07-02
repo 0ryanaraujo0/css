@@ -1,0 +1,493 @@
+/* =========================
+   BODY
+========================= */
+body {
+    background:
+        radial-gradient(circle at top, #032250 0%, #020817 45%),
+        #020817;
+
+    min-height: 100vh;
+
+    color: white;
+
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.registro-container {
+    padding: 35px 40px;
+}
+
+/* =========================
+   TOPO
+========================= */
+.registro-header {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    margin-bottom: 35px;
+}
+
+/* ÍCONE */
+.registro-icon {
+    width: 62px;
+    height: 62px;
+
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 191, 255, 0.08);
+
+    border: 1px solid rgba(0, 191, 255, 0.25);
+
+    box-shadow:
+        0 0 22px rgba(0, 191, 255, 0.15);
+}
+
+/* ÍCONE */
+.registro-icon i {
+    color: #00bfff;
+
+    font-size: 28px;
+}
+
+/* TÍTULO */
+.registro-header h1 {
+    font-size: 56px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+/* SUBTÍTULO */
+.registro-header p {
+    color: #8fa4c7;
+
+    font-size: 22px;
+}
+
+/* =========================
+   GRID
+========================= */
+.registro-grid {
+    display: grid;
+
+    grid-template-columns: 2.4fr 1fr;
+
+    gap: 28px;
+}
+
+/* =========================
+   CARD FORMULÁRIO
+========================= */
+.registro-card {
+    padding: 30px;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(7, 17, 36, 0.96),
+        rgba(3, 10, 24, 0.98)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   LINHAS
+========================= */
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 28px;
+
+    margin-bottom: 34px;
+}
+
+/* =========================
+   LABEL
+========================= */
+.input-group-custom label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #a0b2cf;
+
+    font-size: 19px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.input-group-custom input,
+.input-group-custom textarea {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: rgba(2, 10, 22, 0.95);
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    color: white;
+
+    border-radius: 16px;
+
+    padding: 18px 20px;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+/* INPUT ALTURA */
+.input-group-custom input {
+    height: 68px;
+}
+
+/* TEXTAREA */
+.input-group-custom textarea {
+    height: 170px;
+
+    resize: none;
+
+    padding-top: 22px;
+
+    line-height: 1.6;
+}
+
+/* PLACEHOLDER */
+.input-group-custom textarea::placeholder {
+    color: #7185a5;
+}
+
+/* FOCUS */
+.input-group-custom input:focus,
+.input-group-custom textarea:focus {
+    border-color: rgba(0, 191, 255, 0.35);
+
+    box-shadow:
+        0 0 0 4px rgba(0, 191, 255, 0.06);
+}
+
+/* =========================
+   GRAVIDADE
+========================= */
+.gravidade-buttons {
+    display: flex;
+
+    gap: 14px;
+}
+
+/* BOTÃO */
+.gravidade-btn {
+    flex: 1;
+
+    height: 68px;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    background: rgba(2, 10, 22, 0.95);
+
+    color: white;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+/* HOVER */
+.gravidade-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* SIMPLES */
+.gravidade-btn.simples.active {
+    background: rgba(0, 255, 170, 0.08);
+
+    color: #00ffaa;
+
+    border-color: rgba(0, 255, 170, 0.35);
+
+    box-shadow:
+        0 0 18px rgba(0, 255, 170, 0.08);
+}
+
+/* MÉDIO */
+.gravidade-btn.medio.active {
+    background: rgba(255, 196, 0, 0.08);
+
+    color: #ffcf33;
+
+    border-color: rgba(255, 196, 0, 0.35);
+}
+
+/* GRAVE */
+.gravidade-btn.grave.active {
+    background: rgba(255, 0, 85, 0.08);
+
+    color: #ff4d7a;
+
+    border-color: rgba(255, 0, 85, 0.35);
+}
+
+/* =========================
+   Descrição
+========================= */
+.textarea-group {
+    margin-bottom: 40px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.form-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+/* INFO */
+.footer-info {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    color: #90a3c3;
+
+    font-size: 16px;
+}
+
+/* ÍCONE */
+.footer-info i {
+    font-size: 22px;
+}
+
+/* =========================
+   BOTÃO ENVIAR
+========================= */
+.submit-btn {
+    width: 70%;
+
+    height: 68px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #14b8f0,
+        #1fcfff
+    );
+
+    color: #02111f;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(0, 191, 255, 0.18);
+}
+
+/* HOVER */
+.submit-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 32px rgba(0, 191, 255, 0.25);
+}
+
+/* =========================
+   CARD LATERAL
+========================= */
+.side-card {
+    padding: 28px;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(7, 17, 36, 0.96),
+        rgba(3, 10, 24, 0.98)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    min-height: 710px;
+}
+
+/* TOPO */
+.side-title {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+/* ÍCONE */
+.side-title i {
+    color: white;
+
+    font-size: 24px;
+}
+
+/* TEXTO */
+.side-title h3 {
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+/* =========================
+   ITEM RECENTE
+========================= */
+.recent-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background: rgba(2, 10, 22, 0.65);
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    margin-bottom: 30px;
+}
+
+/* TÍTULO */
+.recent-item h4 {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+/* USUÁRIO */
+.recent-user {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #8ea3c5;
+
+    font-size: 17px;
+}
+
+/* BOLINHA */
+.dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #00bfff;
+}
+
+/* HORA */
+.recent-time {
+    color: #8fa5c7;
+
+    font-size: 18px;
+}
+
+/* TEXTO */
+.side-text {
+    text-align: center;
+
+    color: #90a2c0;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 1200px) {
+
+    .registro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .side-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .registro-container {
+        padding: 25px 18px;
+    }
+
+    .registro-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .registro-header h1 {
+        font-size: 40px;
+    }
+
+    .registro-header p {
+        font-size: 17px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .gravidade-buttons {
+        flex-direction: column;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
